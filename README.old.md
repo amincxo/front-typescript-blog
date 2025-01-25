@@ -1,1 +1,0 @@
-hello this blog project using blog typescript react and tailwind css and post css 

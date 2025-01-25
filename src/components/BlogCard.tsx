@@ -1,8 +1,36 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
+import React , {useState} from 'react'
+import { IBlog } from '../types/blog.type';
 //import { FC } from "react";
 //import { PropsBlog } from "../types/blog.types";
 const BlogCardComponent = () => {
+    const [blog , setBlogs] = useState<IBlog[]>([]);
+    setBlogs([
+        {
+            title: 'react tailwaind card with Grid1',
+            author: 'aminBorvayeh',
+            image: 'https://picsum.photos/200/300',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum'
+        },
+        {
+            title: 'react tailwaind card with Grid1',
+            author: 'aminBorvayeh',
+            image: 'https://picsum.photos/200/300',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum'
+        },
+        {
+            title: 'react tailwaind card with Grid1',
+            author: 'aminBorvayeh',
+            image: 'https://picsum.photos/200/300',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum'
+        },
+        {
+            title: 'react tailwaind card with Grid1',
+            author: 'aminBorvayeh',
+            image: 'https://picsum.photos/200/300',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum'
+        }
+    ])
     return (
         <>
             <div className="w-full shadow-md lg:max-w-sm p-2">
